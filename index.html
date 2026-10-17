@@ -268,6 +268,29 @@
     
     #process .intro { max-width: none; }
     @media (max-width: 800px) { section { padding: 48px 0; } }
+
+    /* ===== PROJECT BOXES: each project in its own clear border ===== */
+    .pcards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+    .pcard { display: flex; flex-direction: column; padding: 30px 28px; border-radius: 16px; background: var(--white); border: 2px solid var(--raspberry); box-shadow: 0 1px 3px rgba(41,16,43,.08); transition: transform .15s, box-shadow .15s; }
+    .pcard:hover { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(41,16,43,.16); }
+    .pnum { font-family: var(--serif); font-weight: 700; font-size: 3rem; line-height: 1; color: var(--raspberry); margin-bottom: 16px; }
+    .pcard h3 { font-size: 1.5rem; margin-bottom: 12px; }
+    .pdesc { margin: 0 0 20px; color: var(--muted); }
+    .pstat { margin: 0 0 18px; padding: 14px 16px; border-left: 4px solid var(--peach); border-radius: 8px; background: rgba(255,255,255,.08); }
+    .pstat strong { display: block; font-family: var(--serif); font-size: 1.9rem; line-height: 1.1; color: var(--peach); }
+    .pstat span { font-size: .9rem; color: #ecdccd; }
+    .ptags { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0 0 24px; padding: 0; }
+    .ptags li { padding: 3px 11px; border-radius: 999px; font-size: .8rem; font-weight: 700; color: var(--cream); border: 1px solid rgba(255,255,255,.3); }
+    .pbtn { margin-top: auto; text-align: center; }
+    .pcard-live { background: linear-gradient(150deg, var(--berry) 0%, var(--deep) 90%); border: 3px solid var(--peach); outline: 2px solid var(--berry); outline-offset: 4px; color: var(--cream); }
+    .pcard-live h3 { color: var(--cream); }
+    .pcard-live .pnum { color: var(--peach); }
+    .pcard-live .pdesc { color: #ecdccd; }
+    .pcard-empty { background: var(--cream); box-shadow: none; }
+    .pcard-empty:hover { transform: none; box-shadow: none; }
+    .pbtn-off { background: transparent; color: var(--muted); border-color: var(--line); cursor: default; }
+    .pbtn-off:hover { background: transparent; border-color: var(--line); }
+    @media (max-width: 900px) { .pcards { grid-template-columns: 1fr; } }
 </style>
 </head>
 
@@ -280,7 +303,6 @@
         <a href="#about">About</a>
         <a href="#process">Process</a>
         <a href="#projects">Projects</a>
-        <a href="dashboard.html">Case study</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -398,76 +420,31 @@
     <section id="projects">
       <div class="container">
         <h2>Projects</h2>
-        <p class="intro">
-          A selection of analytical work, from dashboards for non-technical users
-          to SQL analysis and Python automation.
-        </p>
+        <p class="intro">A selection of analytical work. Each project has its own page with the full write-up.</p>
 
-        <!-- FEATURED CASE STUDY (summary). The full write-up is on dashboard.html -->
-        <article class="card case-study teaser">
-          <h3>Data Issue Detection Dashboard</h3>
-          <p class="subtitle">An internal tool I designed from start to finish to cut bug investigation time from hours to seconds</p>
+        <div class="pcards">
 
-          <div class="metrics">
-            <div class="metric"><strong>30 &rarr; 4</strong><span>internal data issue tickets per week, on average</span></div>
-            <div class="metric"><strong>Hours &rarr; seconds</strong><span>to investigate a suspected data bug</span></div>
-            <div class="metric"><strong>50%+</strong><span>faster to raise and resolve issues</span></div>
-          </div>
-
-          <p>
-            Built on Snowflake, SQL and Python, with an AI agent that spots spikes and drops
-            and guides users through raising a ticket.
-          </p>
-
-          <div class="button-row">
-            <a class="button button-solid" href="dashboard.html">Read the full case study &rarr;</a>
-          </div>
-        </article>
-
-        <!-- OTHER PROJECTS: replace the descriptions with your real work -->
-        <div class="project-grid">
-
-          <article class="card project">
-            <h3>SQL Data Analysis</h3>
-            <p><strong>Question:</strong> What patterns sit inside this dataset? (Describe the business question.)</p>
-            <p><strong>Approach:</strong> Querying, transforming and exploring structured data with SQL. (Mention joins, CTEs, window functions you used.)</p>
-            <p><strong>Outcome:</strong> What you found and what it changed. (Add a number if you can.)</p>
-            <p><a href="https://github.com/YOUR-USERNAME/sql-project" target="_blank" rel="noopener noreferrer">View on GitHub</a></p>
-            <ul class="tags">
-              <li>SQL</li>
-              <li>Data Analysis</li>
-            </ul>
+          <article class="pcard pcard-live">
+            <span class="pnum">01</span>
+            <h3>Data Issue Detection Dashboard</h3>
+            <p class="pdesc">An internal tool I designed from start to finish to cut bug investigation time from hours to seconds.</p>
+            <div class="pstat"><strong>30 &rarr; 4</strong><span>data issue tickets per week</span></div>
+            <ul class="ptags"><li>Snowflake</li><li>SQL</li><li>AI agent</li></ul>
+            <a class="button pbtn" href="dashboard.html">View project &rarr;</a>
           </article>
 
-          <article class="card project">
-            <h3>Python Workflow Automation</h3>
-            <p><strong>Question:</strong> Which repetitive task could be automated? (Describe the manual process.)</p>
-            <p><strong>Approach:</strong> A Python script that handles the task consistently and reproducibly, tracked with Git.</p>
-            <p><strong>Outcome:</strong> Time saved or errors avoided. (Add a number if you can.)</p>
-            <p><a href="https://github.com/YOUR-USERNAME/python-project" target="_blank" rel="noopener noreferrer">View on GitHub</a></p>
-            <ul class="tags">
-              <li>Python</li>
-              <li>Automation</li>
-              <li>Git</li>
-            </ul>
+          <article class="pcard pcard-empty">
+            <span class="pnum">02</span>
+            <h3>To be added</h3>
+            <p class="pdesc">A write-up for this project will appear here.</p>
+            <span class="button pbtn pbtn-off" aria-disabled="true">Coming soon</span>
           </article>
 
-          <article class="card project project-slot">
-            <h3>Project 3</h3>
-            <p>Additional project in development. A full write-up will follow, covering the business question, approach and outcome.</p>
-            <ul class="tags"><li>Coming soon</li></ul>
-          </article>
-
-          <article class="card project project-slot">
-            <h3>Project 4</h3>
-            <p>Additional project in development. A full write-up will follow, covering the business question, approach and outcome.</p>
-            <ul class="tags"><li>Coming soon</li></ul>
-          </article>
-
-          <article class="card project project-slot">
-            <h3>Project 5</h3>
-            <p>Additional project in development. A full write-up will follow, covering the business question, approach and outcome.</p>
-            <ul class="tags"><li>Coming soon</li></ul>
+          <article class="pcard pcard-empty">
+            <span class="pnum">03</span>
+            <h3>To be added</h3>
+            <p class="pdesc">A write-up for this project will appear here.</p>
+            <span class="button pbtn pbtn-off" aria-disabled="true">Coming soon</span>
           </article>
 
         </div>
