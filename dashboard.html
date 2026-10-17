@@ -19,7 +19,17 @@
       <nav class="nav-links" aria-label="Main navigation">
         <a href="index.html#about">About</a>
         <a href="index.html#projects">Projects</a>
-        <a href="dashboard.html" aria-current="page">Dashboard</a>
+        <span class="nav-sep" aria-hidden="true"></span>
+        <div class="nav-drop">
+          <button class="nav-arrow" type="button" aria-expanded="false" aria-controls="project-menu" aria-label="Show projects">
+            <svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="nav-menu" id="project-menu" hidden>
+            <a class="nav-tab" href="dashboard.html" aria-current="page">Data Issue Detection Dashboard</a>
+            <span class="nav-tab is-off" aria-disabled="true" title="Coming soon">Project 2</span>
+            <span class="nav-tab is-off" aria-disabled="true" title="Coming soon">Project 3</span>
+          </div>
+        </div>
         <a href="index.html#skills">Skills</a>
         <a href="index.html#contact">Contact</a>
       </nav>
@@ -161,5 +171,16 @@
     </div>
   </footer>
 
+  <script>
+    // Arrow next to Projects: opens and closes the project menu
+    (function () {
+      var btn = document.querySelector('.nav-arrow'), menu = document.getElementById('project-menu');
+      if (!btn || !menu) return;
+      function set(open) { btn.setAttribute('aria-expanded', open); menu.hidden = !open; }
+      btn.addEventListener('click', function (e) { e.stopPropagation(); set(menu.hidden); });
+      document.addEventListener('click', function (e) { if (!menu.contains(e.target)) set(false); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { set(false); btn.focus(); } });
+    })();
+  </script>
 </body>
 </html>
