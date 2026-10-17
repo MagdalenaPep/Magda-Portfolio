@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Issue Detection Dashboard | Magdalena Butcovan</title>
+  <meta name="description" content="Case study: an internal data issue detection dashboard built with Snowflake, SQL and Python that cut weekly data issue tickets from 30 to 4.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">Magdalena Butcovan</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="dashboard.html" aria-current="page">Dashboard</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero page-hero">
+      <div class="container">
+        <a class="back-link" href="index.html#projects">&larr; Back to projects</a>
+        <p class="kicker">Case study</p>
+        <h1>Data Issue Detection Dashboard</h1>
+        <p class="lead">An internal tool I designed from start to finish to cut bug investigation time from hours to seconds.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container cs-page">
+<p>
+            The dashboard lets anyone in the company check whether a problem is a data issue,
+            and raise a ticket with the right team, without waiting for the analytics team
+            to investigate first.
+          </p>
+
+          <div class="metrics">
+            <div class="metric"><strong>30 &rarr; 4</strong><span>internal data issue tickets per week, on average</span></div>
+            <div class="metric"><strong>Hours &rarr; seconds</strong><span>to investigate a suspected data bug</span></div>
+            <div class="metric"><strong>50%+</strong><span>faster to raise and resolve issues</span></div>
+          </div>
+
+          <div class="details">
+            <div>
+              <h4>The problem</h4>
+              <p>When something looked wrong, the analytics team had to investigate first to find out whether it was a data issue. That took hours and added an extra step before the right team heard about it.</p>
+            </div>
+            <div>
+              <h4>The result</h4>
+              <p>Other teams can now check for themselves, see whether it is a data issue, and raise the ticket with the correct team. Removing that extra step sped up raising and resolving issues by at least 50%.</p>
+            </div>
+          </div>
+
+          <h2>How I built it</h2>
+          <ol class="steps">
+            <li><strong>Found the gaps.</strong> I identified where gaps, abnormalities and duplications appear in the data.</li>
+            <li><strong>Wrote the Snowflake queries.</strong> I built complex SQL that brings the data through in a form that is easy to present, so gaps, abnormalities and duplications show up as clear spikes and drops on the graphs.</li>
+            <li><strong>Scaled it with Python.</strong> I used Python to run the SQL script across every datamart, so one dashboard covers all client information.</li>
+            <li><strong>Connected the BI tool to Snowflake.</strong> The tool connects directly to Snowflake, and the only input a user needs is the schema name and the date to investigate.</li>
+            <li><strong>Added an AI agent.</strong> To cut investigation time further, I connected an agent to the visuals. It uses detailed orchestration to pick out spikes and drops, tells the user to check them against the source of truth (agents can be wrong), and guides them through creating a ticket.</li>
+          </ol>
+
+          <h2>Screenshots</h2>
+
+          <!-- Upload these two images to an "images" folder in your repository -->
+          <div class="shots">
+            <figure>
+              <img src="images/data-issue-overview.png" alt="Overview screen of the Data Issue Detection Dashboard" loading="lazy">
+              <figcaption>Account overview: how data gaps are presented.</figcaption>
+            </figure>
+            <figure>
+              <img src="images/data-issue-details.png" alt="Detailed view of data issues within an account" loading="lazy">
+              <figcaption>Detailed view: more information about each issue.</figcaption>
+            </figure>
+          </div>
+
+          <ul class="tags">
+            <li>Snowflake</li>
+            <li>SQL</li>
+            <li>Python</li>
+            <li>Dashboard Design</li>
+            <li>Data Quality</li>
+            <li>AI Agent</li>
+          </ul>
+
+        <div class="button-row">
+          <a class="button button-solid" href="index.html#projects">&larr; Back to projects</a>
+          <a class="button button-solid" href="index.html#contact">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Magdalena Butcovan. Built with HTML and CSS.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
