@@ -280,7 +280,7 @@
         <a href="#about">About</a>
         <a href="#process">Process</a>
         <a href="#projects">Projects</a>
-        <a href="#projects">Case study</a>
+        <a href="dashboard.html">Case study</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -420,7 +420,7 @@
           </p>
 
           <div class="button-row">
-            <a class="button button-solid" href="#projects">Read the full case study &rarr;</a>
+            <a class="button button-solid" href="dashboard.html">Read the full case study &rarr;</a>
           </div>
         </article>
 
@@ -536,5 +536,17 @@
     </div>
   </footer>
 
+  <script>
+    // Smooth-scroll for in-page links (hero buttons, nav) so they slide to the section
+    document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        var target = document.querySelector(link.getAttribute('href'));
+        if (!target) return;
+        e.preventDefault();
+        var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        target.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+      });
+    });
+  </script>
 </body>
 </html>
