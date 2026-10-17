@@ -1,2 +1,2 @@
-#Magdlana Portfolio
-To visit my portfolio please go to https://magdalenapep.github.io/magda-data/dashboard.html
+# Magdlana Portfolio
+To visit my portfolio please go to [https://magdalenapep.github.io/magda-data/dashboard.html](https://magdalenapep.github.io/Magda-Portfolio/)
