@@ -287,6 +287,7 @@
     .pcard-live .pnum { color: var(--peach); }
     .pcard-live .pdesc { color: #ecdccd; }
     .pcard-empty { background: var(--cream); box-shadow: none; }
+    .pcard:not(.pcard-live) .ptags li { color: var(--berry); border-color: var(--raspberry); }
     .pcard-empty:hover { transform: none; box-shadow: none; }
     .pbtn-off { background: transparent; color: var(--muted); border-color: var(--line); cursor: default; }
     .pbtn-off:hover { background: transparent; border-color: var(--line); }
@@ -327,7 +328,7 @@
           </button>
           <div class="nav-menu" id="project-menu" hidden>
             <a class="nav-tab" href="dashboard.html">Data Issue Detection Dashboard</a>
-            <span class="nav-tab is-off" aria-disabled="true" title="Coming soon">Project 2</span>
+            <a class="nav-tab" href="project-2.html">Executive KPI Reporting &amp; Dashboard Development</a>
             <span class="nav-tab is-off" aria-disabled="true" title="Coming soon">Project 3</span>
           </div>
         </div>
@@ -461,11 +462,12 @@
             <a class="button pbtn" href="dashboard.html">View project &rarr;</a>
           </article>
 
-          <article class="pcard pcard-empty">
+          <article class="pcard">
             <span class="pnum">02</span>
-            <h3>To be added</h3>
-            <p class="pdesc">A write-up for this project will appear here.</p>
-            <span class="button pbtn pbtn-off" aria-disabled="true">Coming soon</span>
+            <h3>Executive KPI Reporting &amp; Dashboard Development</h3>
+            <p class="pdesc">Bespoke KPIs and dashboards that turn complex e-commerce data into actionable insight for brand managers, e-commerce teams and executives.</p>
+            <ul class="ptags"><li>Snowflake</li><li>dbt</li><li>KPI design</li></ul>
+            <a class="button pbtn" href="project-2.html">View project &rarr;</a>
           </article>
 
           <article class="pcard pcard-empty">
