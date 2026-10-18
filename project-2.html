@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Executive KPI Reporting &amp; Dashboard Development | Magdalena Butcovan</title>
+  <meta name="description" content="Case study: translating ambiguous commercial requirements into bespoke, scalable and well-documented BI solutions, from KPI definition to Snowflake, dbt and dashboards.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">Magdalena Butcovan</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#process">Process</a>
+        <a href="index.html#projects">Projects</a>
+        <span class="nav-sep" aria-hidden="true"></span>
+        <div class="nav-drop">
+          <button class="nav-arrow" type="button" aria-expanded="false" aria-controls="project-menu" aria-label="Show projects">
+            <svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="nav-menu" id="project-menu" hidden>
+            <a class="nav-tab" href="dashboard.html">Data Issue Detection Dashboard</a>
+            <a class="nav-tab" href="project-2.html" aria-current="page">Executive KPI Reporting &amp; Dashboard Development</a>
+            <span class="nav-tab is-off" aria-disabled="true" title="Coming soon">Project 3</span>
+          </div>
+        </div>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero page-hero">
+      <div class="container">
+        <a class="back-link" href="index.html#projects">&larr; Back to projects</a>
+        <p class="kicker">Case study &middot; Professional work</p>
+        <h1>Executive KPI Reporting &amp; Dashboard Development</h1>
+        <p class="lead">I turn ambiguous commercial requirements into bespoke, scalable and well-documented BI solutions: complex e-commerce data, shaped into actionable insight for brand managers, e-commerce teams and executives.</p>
+        <div class="meta">
+          <div><small>Role</small><strong>End to end, from requirements to handover</strong></div>
+          <div><small>Built with</small><strong>Snowflake, SQL, dbt, Python, BI dashboards</strong></div>
+          <div><small>Audience</small><strong>Brand, category, e-commerce and executive teams</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tight">
+      <div class="container">
+        <h2>Project overview</h2>
+        <div class="prose">
+          <p>Each solution is tailored to the client&rsquo;s commercial objectives and reporting needs. I work end to end: interpreting client requirements, defining performance metrics, transforming the data, building scalable data models, developing the dashboards, running quality assurance and writing the documentation.</p>
+          <p>The challenge is to bring complex data, bespoke calculations and multiple levels of reporting into a single, intuitive experience that supports both detailed performance analysis and high-level strategic decisions.</p>
+        </div>
+        <h3 class="sub">My contribution</h3>
+        <ul class="contrib">
+          <li><strong>Requirements and KPIs:</strong> interpreted client briefs and defined the metrics, targets and benchmarks.</li>
+          <li><strong>Data engineering:</strong> wrote the SQL (CTEs, window functions, table creation) in Snowflake and supported scalable transformations with dbt and Python.</li>
+          <li><strong>Dashboards:</strong> modelled the data in the BI layer and designed the reporting for each audience.</li>
+          <li><strong>Quality assurance:</strong> validated my own work, tested with colleagues, resolved discrepancies and acted on client feedback.</li>
+          <li><strong>Documentation:</strong> wrote the user guides explaining KPI definitions, calculations and how to read the results.</li>
+        </ul>
+        <p class="note">Client names, data and company-specific terminology are anonymised throughout this page.</p>
+      </div>
+    </section>
+
+    <section class="band tight">
+      <div class="container">
+        <h2>The business challenge</h2>
+        <div class="prose">
+          <p>E-commerce businesses need to understand how their brands and categories perform at many levels, from individual retailers and markets up to global performance and executive KPIs. Different stakeholders need different perspectives on the same underlying data.</p>
+          <p>Brand and category managers need detail to monitor performance and spot opportunities. E-commerce managers and executives need consistent, consolidated metrics to judge progress against targets. Delivering all of this in one reporting solution is the hard part:</p>
+        </div>
+        <div class="tech">
+          <div><h4>Multiple stakeholder requirements</h4><p>Supporting local teams, global teams and executive audiences within one cohesive reporting framework.</p></div>
+          <div><h4>Complex metric definitions</h4><p>Translating commercial objectives into meaningful KPIs, benchmarks, weighted metrics and bespoke performance scores.</p></div>
+          <div><h4>Client-specific business logic</h4><p>Custom brand mappings, retailer-defined keywords, bespoke category structures and tailored methods of analysing performance.</p></div>
+          <div><h4>Complex e-commerce data</h4><p>Accounting for the nuances of different retailers, data sources, metrics and reporting requirements.</p></div>
+          <div><h4>Scalability and performance</h4><p>Data models that support complex calculations and efficient dashboards across multiple client accounts.</p></div>
+          <div><h4>Strict delivery timelines</h4><p>Managing scope, technical feasibility, development, testing and stakeholder feedback against agreed deadlines.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tight">
+      <div class="container">
+        <h2>The end-to-end development process</h2>
+        <div class="tech">
+          <div><h4><small>01</small>Requirements &amp; scoping</h4><p>Review client briefs, clarify business objectives, assess feasibility and define deliverables within agreed timelines.</p></div>
+          <div><h4><small>02</small>KPI definition &amp; business logic</h4><p>Translate commercial goals into metric definitions, targets, benchmarks, weighting methodologies and custom mappings.</p></div>
+          <div><h4><small>03</small>Data engineering &amp; transformation</h4><p>Develop SQL queries, CTEs, window functions and tables in Snowflake, then support scalable transformations using dbt and Python.</p></div>
+          <div><h4><small>04</small>BI modelling &amp; dashboard development</h4><p>Structure and transform the data in the BI layer, then design tailored reporting experiences for different audiences.</p></div>
+          <div><h4><small>05</small>Quality assurance &amp; refinement</h4><p>Individual and team QA, investigating discrepancies, resolving issues and incorporating client feedback.</p></div>
+          <div><h4><small>06</small>Documentation &amp; handover</h4><p>Detailed user guides explaining KPI definitions, calculations, dashboard functionality and how to interpret the results.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band tight">
+      <div class="container">
+        <h2>KPI design and bespoke business logic</h2>
+        <div class="prose">
+          <p>A key part of the work is translating client-specific objectives into metrics that accurately represent performance. Rather than relying only on standard e-commerce indicators, the reporting can include bespoke calculations, weighting methodologies, benchmark definitions and custom data mappings that reflect each client&rsquo;s priorities.</p>
+        </div>
+        <div class="tech">
+          <div><h4>Performance targets and benchmarks</h4><p>Defining appropriate targets and comparison criteria for different metrics, retailers, brands or categories.</p></div>
+          <div><h4>Custom brand mapping</h4><p>Mapping retailer-defined keywords and product terminology to the client’s brand structure.</p></div>
+          <div><h4>Bespoke category hierarchies</h4><p>Custom category groupings, so performance can be analysed using the client’s own business definitions.</p></div>
+          <div><h4>Weighted performance metrics</h4><p>Tailored weighting methodologies that reflect the relative importance of individual KPIs.</p></div>
+          <div><h4>Holistic performance scoring</h4><p>Multiple e-commerce indicators combined into one consolidated score for a broader view of performance.</p></div>
+        </div>
+        <p class="note">These requirements take analytical thinking, commercial understanding and technical problem-solving, so that the resulting metrics are meaningful, consistent and fit for purpose.</p>
+        <!-- Strong screenshot idea: a standard KPI shown next to a bespoke calculated metric, anonymised, with the business rationale. Replace the placeholder with:
+             <figure class="screen"><img src="images/bespoke-kpi.png" alt="..." loading="lazy"><figcaption>...</figcaption></figure> -->
+        <div class="gallery gallery-1">
+          <figure class="screen">
+            <div class="shot-placeholder"><span>Add anonymised screenshot<small>Replace with images/bespoke-kpi.png</small></span></div>
+            <figcaption><strong>Standard KPI versus bespoke metric</strong>An anonymised example of a standard KPI beside a bespoke calculated metric, and why the client needed it.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="tight">
+      <div class="container">
+        <h2>Data engineering and technical implementation</h2>
+        <p class="lead-sub">From business logic to a production-ready reporting dataset.</p>
+        <ol class="pipeline">
+          <li><small>1 &middot; Define</small><strong>Business requirements &amp; KPIs</strong><p>Targets, benchmarks, mapping rules and calculation logic.</p></li>
+          <li><small>2 &middot; Transform</small><strong>Snowflake &amp; SQL</strong><p>CTEs, window functions, table creation and data transformations.</p></li>
+          <li><small>3 &middot; Scale</small><strong>Transformation layer</strong><p>dbt and Python, with reusable logic across multiple accounts.</p></li>
+          <li><small>4 &middot; Model</small><strong>BI model &amp; dashboard</strong><p>Reporting structures, calculations, filters and visualisation.</p></li>
+          <li><small>5 &middot; Deliver</small><strong>QA, documentation &amp; delivery</strong><p>Validation, team testing, client feedback and user guides.</p></li>
+        </ol>
+        <div class="prose" style="margin-top: 36px;">
+          <h3 class="sub">Technical approach</h3>
+          <p>SQL and Snowflake transform complex source data into structured reporting datasets, using common table expressions, window functions, table creation and bespoke calculation logic.</p>
+          <p>dbt and Python support the development and scaling of that logic across multiple client accounts, keeping it consistent while allowing for client-specific requirements.</p>
+          <p>In the BI layer, the datasets are modelled further and organised to support efficient reporting, intuitive navigation and consistent KPI presentation across stakeholder groups.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="band tight">
+      <div class="container">
+        <h2>Dashboard design and user experience</h2>
+        <div class="prose">
+          <p>Good dashboard design is more than choosing charts. It takes decisions about information hierarchy, labels, legends, slicers, tooltips or pop-outs, colour, layout, navigation and performance. The central challenge is providing depth without overwhelming the user.</p>
+        </div>
+        <!-- To add a screenshot: save the anonymised image in the images folder, then replace its placeholder with:
+             <figure class="screen"><img src="images/your-file.png" alt="Describe the dashboard" loading="lazy"><figcaption><strong>Title</strong>Caption</figcaption></figure> -->
+        <div class="gallery gallery-3">
+          <figure class="screen">
+            <div class="shot-placeholder"><span>Add anonymised screenshot<small>Replace with images/executive-overview.png</small></span></div>
+            <figcaption><strong>Executive performance overview</strong>High-level KPIs, performance against targets, summary scores and key trends, so executives can understand performance quickly.</figcaption>
+          </figure>
+          <figure class="screen">
+            <div class="shot-placeholder"><span>Add anonymised screenshot<small>Replace with images/brand-category.png</small></span></div>
+            <figcaption><strong>Brand &amp; category performance</strong>Detailed breakdowns by brand, category, retailer and market, so managers can investigate performance at different levels.</figcaption>
+          </figure>
+          <figure class="screen">
+            <div class="shot-placeholder"><span>Add anonymised screenshot<small>Replace with images/global-local.png</small></span></div>
+            <figcaption><strong>Global &amp; local reporting</strong>Flexible filters, consistent metric definitions and tailored views for different reporting needs within one solution.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="tight">
+      <div class="container">
+        <h2>Quality assurance and documentation</h2>
+        <div class="tech">
+          <div><h4>Data and calculation validation</h4><p>Checking that SQL outputs, KPI calculations, mappings, totals and dashboard results align with the agreed business definitions.</p></div>
+          <div><h4>Collaborative QA and iteration</h4><p>Testing with colleagues, resolving defects and refining the solution based on QA findings and client feedback.</p></div>
+          <div><h4>Detailed user documentation</h4><p>Documenting KPI definitions, complex calculations, filters, dashboard functionality and interpretation guidance, so users can work confidently with the reporting.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band tight">
+      <div class="container">
+        <h2>Business impact</h2>
+        <div class="prose">
+          <p>The resulting reporting solutions give clients a consistent framework for evaluating e-commerce performance, while meeting the different needs of global, local and executive stakeholders.</p>
+          <p>By combining bespoke KPI logic, scalable data transformations and carefully designed visualisations, the dashboards support performance monitoring, comparison against targets and better-informed decisions.</p>
+          <p>The end-to-end approach also puts data reliability, maintainability and usability first, through extensive QA, iterative refinement and detailed documentation.</p>
+          <!-- Add real figures here if you have them: dashboards delivered, accounts supported, markets covered, development time saved, fewer reporting discrepancies. -->
+        </div>
+        <ul class="tags">
+          <li>KPI Design</li>
+          <li>Snowflake</li>
+          <li>SQL</li>
+          <li>dbt</li>
+          <li>Python</li>
+          <li>Data Modelling</li>
+          <li>Dashboard Design</li>
+          <li>Documentation</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta tight">
+      <div class="container">
+        <h2>Want to know more?</h2>
+        <div class="button-row">
+          <a class="button" href="index.html#contact">Get in touch</a>
+          <a class="button button-secondary" href="index.html#projects">&larr; Back to projects</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Magdalena Butcovan. Built with HTML and CSS.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Arrow next to Projects: opens and closes the project menu
+    (function () {
+      var btn = document.querySelector('.nav-arrow'), menu = document.getElementById('project-menu');
+      if (!btn || !menu) return;
+      function set(open) { btn.setAttribute('aria-expanded', open); menu.hidden = !open; }
+      btn.addEventListener('click', function (e) { e.stopPropagation(); set(menu.hidden); });
+      document.addEventListener('click', function (e) { if (!menu.contains(e.target)) set(false); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { set(false); btn.focus(); } });
+    })();
+  </script>
+</body>
+</html>
