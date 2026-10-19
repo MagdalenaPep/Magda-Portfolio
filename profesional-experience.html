@@ -8,7 +8,170 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Experience | Magdalena Butcovan</title>
+  <meta name="description" content="Professional experience of Magdalena Butcovan, data analyst: dashboard development, KPI design, SQL and Snowflake, data quality tooling and QA.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">Magdalena Butcovan</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html#about">About</a>
+        <a href="index.html#process">Process</a>
+        <a href="index.html#projects">Projects</a>
+        <span class="nav-sep" aria-hidden="true"></span>
+        <div class="nav-drop">
+          <button class="nav-arrow" type="button" aria-expanded="false" aria-controls="project-menu" aria-label="Show projects">
+            <svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="nav-menu" id="project-menu" hidden>
+            <a class="nav-tab" href="professional-experience.html" aria-current="page">Professional experience</a>
+            <span class="nav-tab is-off" aria-disabled="true" title="Coming soon">Personal project 1</span>
+            <span class="nav-tab is-off" aria-disabled="true" title="Coming soon">Personal project 2</span>
+          </div>
+        </div>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero page-hero">
+      <div class="container">
+        <a class="back-link" href="index.html#projects">&larr; Back to projects</a>
+        <p class="kicker">Data Analyst &middot; 3 years and counting</p>
+        <h1>Professional experience</h1>
+        <p class="lead">I turn complex e-commerce data into reporting people can trust, and build the tools that keep that data reliable. This page covers what I do and the skills I use.</p>
+        <div class="meta">
+          <div><small>Role</small><strong>End to end, from requirements to handover</strong></div>
+          <div><small>Built with</small><strong>Snowflake, SQL, dbt, Python, BI dashboards, AI agents</strong></div>
+          <div><small>Audience</small><strong>Brand, category, e-commerce and executive teams</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tight">
+      <div class="container">
+        <h2>What I do</h2>
+        <div class="prose">
+          <p>I work end to end: interpreting client requirements, defining performance metrics, transforming the data, building scalable data models, developing dashboards, running quality assurance and writing the documentation.</p>
+          <p>The challenge is to bring complex data, bespoke calculations and several levels of reporting into one intuitive experience, so people can analyse detail and make high-level decisions from the same source.</p>
+        </div>
+        <h3 class="sub">My contribution</h3>
+        <ul class="contrib">
+          <li><strong>Requirements and KPIs:</strong> interpreted client briefs and defined the metrics, targets and benchmarks.</li>
+          <li><strong>Data engineering:</strong> wrote SQL (CTEs, window functions, table creation) in Snowflake and supported scalable transformations with dbt and Python.</li>
+          <li><strong>Dashboards:</strong> modelled the data in the BI layer and designed the reporting for each audience.</li>
+          <li><strong>Data quality tooling:</strong> designed and built an internal, self-serve tool for spotting data issues, combining parameterised SQL, a BI dashboard and an AI agent.</li>
+          <li><strong>Quality assurance:</strong> validated my own work, tested with colleagues, resolved discrepancies and acted on client feedback.</li>
+          <li><strong>Documentation:</strong> wrote user guides explaining KPI definitions, calculations and how to read the results.</li>
+        </ul>
+        <p class="note">Because of confidentiality and intellectual property agreements, this page describes my responsibilities and skills only. It does not include client names, data, screenshots, internal designs or results.</p>
+      </div>
+    </section>
+
+    <section class="band tight">
+      <div class="container">
+        <h2>Areas of work</h2>
+        <div class="flow">
+          <div><h4>Dashboard development</h4><p>Dashboards for brand, category, e-commerce and executive audiences, from global overviews to detailed local views. I decide on information hierarchy, filters, labels, navigation and performance, so depth doesn&rsquo;t overwhelm the user.</p></div>
+          <div><h4>KPI design and business logic</h4><p>Turning client objectives into metrics: targets and benchmarks, weighted measures, custom mappings, bespoke category hierarchies and combined performance scores.</p></div>
+          <div><h4>Data quality tooling</h4><p>A self-serve tool that helps teams spot a suspected data issue, using parameterised SQL, a BI dashboard and an AI agent that guides them from detection to raising a ticket with the right owner.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tight">
+      <div class="container">
+        <h2>How I work, end to end</h2>
+        <div class="tech">
+          <div><h4><small>01</small>Requirements &amp; scoping</h4><p>Review client briefs, clarify business objectives, assess feasibility and define deliverables within agreed timelines.</p></div>
+          <div><h4><small>02</small>KPI definition &amp; business logic</h4><p>Translate commercial goals into metric definitions, targets, benchmarks, weighting methods and custom mappings.</p></div>
+          <div><h4><small>03</small>Data engineering &amp; transformation</h4><p>Develop SQL in Snowflake, then scale the transformations with dbt and Python.</p></div>
+          <div><h4><small>04</small>BI modelling &amp; dashboards</h4><p>Structure the data in the BI layer, then design tailored reporting for different audiences.</p></div>
+          <div><h4><small>05</small>Quality assurance &amp; refinement</h4><p>Individual and team QA, investigating discrepancies, resolving issues and incorporating client feedback.</p></div>
+          <div><h4><small>06</small>Documentation &amp; handover</h4><p>User guides covering KPI definitions, calculations, dashboard functionality and how to interpret the results.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band tight">
+      <div class="container">
+        <h2>Skills in practice</h2>
+        <div class="tech">
+          <div><h4>SQL &amp; Snowflake</h4><p>CTEs, window functions, table creation and queries written to perform at scale.</p></div>
+          <div><h4>Data modelling</h4><p>Star-schema and composite-key joins at a daily grain, so metrics are not double-counted and can be trended and drilled into.</p></div>
+          <div><h4>Aggregation techniques</h4><p>Conditional aggregation to pivot row states into columns, and distinct counting of unique entities rather than raw rows.</p></div>
+          <div><h4>Parameterised queries</h4><p>One template reused across client accounts, date ranges and filters.</p></div>
+          <div><h4>dbt &amp; Python</h4><p>Reusable transformation logic that scales across accounts while allowing for client-specific requirements.</p></div>
+          <div><h4>Freshness and lineage checks</h4><p>Using created and updated timestamps to show when data landed and when it was last refreshed.</p></div>
+          <div><h4>Dashboard design</h4><p>Information hierarchy, slicers, tooltips, colour, layout, navigation and performance.</p></div>
+          <div><h4>AI agents</h4><p>Working with AI engineers on Snowflake Agents and orchestrated prompts that help users explore their own data.</p></div>
+          <div><h4>QA &amp; documentation</h4><p>Validation, smoke and sanity testing, team QA, and clear user guides.</p></div>
+        </div>
+        <ul class="tags">
+          <li>Snowflake</li>
+          <li>SQL</li>
+          <li>BigQuery</li>
+          <li>dbt</li>
+          <li>Python</li>
+          <li>Sigma Computing</li>
+          <li>Power BI</li>
+          <li>KPI Design</li>
+          <li>Data Modelling</li>
+          <li>Dashboard Design</li>
+          <li>Data Quality</li>
+          <li>AI Agents</li>
+          <li>Documentation</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta tight">
+      <div class="container">
+        <h2>Want to know more?</h2>
+        <div class="button-row">
+          <a class="button" href="index.html#contact">Get in touch</a>
+          <a class="button button-secondary" href="index.html#projects">&larr; Back to projects</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Magdalena Butcovan. Built with HTML and CSS.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Arrow next to Projects: opens and closes the project menu
+    (function () {
+      var btn = document.querySelector('.nav-arrow'), menu = document.getElementById('project-menu');
+      if (!btn || !menu) return;
+      function set(open) { btn.setAttribute('aria-expanded', open); menu.hidden = !open; }
+      btn.addEventListener('click', function (e) { e.stopPropagation(); set(menu.hidden); });
+      document.addEventListener('click', function (e) { if (!menu.contains(e.target)) set(false); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { set(false); btn.focus(); } });
+    })();
+  </script>
+</body>
+</html>
+
 </head>
 
 <body>
